@@ -1,0 +1,10 @@
+/* display flex and align items to the left */
+.navbar {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #000;
+}
+
+.balance {
+  margin: 0;
+}

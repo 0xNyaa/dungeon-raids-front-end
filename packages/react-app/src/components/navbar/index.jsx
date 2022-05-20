@@ -14,6 +14,7 @@ export default function Navbar() {
         </div>
       );
     } else {
+      // show an avatar here instead of a button
       return (
         <div>
           <button onClick={deactivate}>Disconnect</button>
@@ -23,20 +24,20 @@ export default function Navbar() {
   };
 
   const AccountInfo = () => (
-    <div>
-      <ConnectButton />
-      {account && <div>{shortenAddress(account)}</div>}
+    <div className="account-info">
+      <div>{shortenAddress(account)}</div>
+      {userBalance && (
+        <div className="balance">
+          {`${formatEther(userBalance)} MATIC`}
+        </div>
+      )}
     </div>
   );
 
   return (
-    <div>
-      <AccountInfo />
-      {userBalance && (
-        <div className="balance">
-          <p className="bold">{formatEther(userBalance)} MATIC</p>
-        </div>
-      )}
+    <div className="navbar">
+      <ConnectButton />
+      {account && <AccountInfo />}
     </div>
   );
 }
