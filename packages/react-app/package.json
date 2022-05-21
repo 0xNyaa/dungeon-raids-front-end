@@ -47,7 +47,7 @@
     "test": "react-scripts test"
   },
   "devDependencies": {
-    "eslint": "^8.16.0",
+    "eslint": "^7.11.0",
     "node": "16"
   }
 }
