@@ -1,2 +1,2 @@
 language = 'nodejs'
-run = 'yarn react-app:start';
+run = 'yarn react-app:start'
