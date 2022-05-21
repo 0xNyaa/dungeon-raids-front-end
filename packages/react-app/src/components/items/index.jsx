@@ -18,12 +18,12 @@ export default function Items() {
       <div className="inventory-row">
         <div className="item-spacer"></div>
         <img
-          src={`/images/accessory_${itemLevels[0]}.webp`}
+          src={`/items/accessory_${itemLevels[0]}.webp`}
           alt={`accessory level ${itemLevels[0]}`}
           className="item"
         />
-        <img src={`/images/armor_${itemLevels[1]}.webp`} alt={`armor level ${itemLevels[1]}`} className="item" />
-        <img src={`/images/weapon_${itemLevels[2]}.webp`} alt={`weapon level ${itemLevels[2]}`} className="item" />
+        <img src={`/items/armor_${itemLevels[1]}.webp`} alt={`armor level ${itemLevels[1]}`} className="item" />
+        <img src={`/items/weapon_${itemLevels[2]}.webp`} alt={`weapon level ${itemLevels[2]}`} className="item" />
         <div className="item-spacer"></div>
       </div>
     );
@@ -42,19 +42,19 @@ export default function Items() {
             {rowIdx !== 1 && <div className="upgrade-cost">{(rowIdx - 1) ** 3 * 100}g</div>}
           </div>
           <img
-            src={`/images/accessory_${rowIdx}.webp`}
+            src={`/items/accessory_${rowIdx}.webp`}
             alt={`accessory level ${rowIdx}`}
             onClick={() => upgradeItem(ACCESSORY, rowIdx)}
             className="item"
           />
           <img
-            src={`/images/armor_${rowIdx}.webp`}
+            src={`/items/armor_${rowIdx}.webp`}
             alt={`armor level ${rowIdx}`}
             onClick={() => upgradeItem(ARMOR, rowIdx)}
             className="item"
           />
           <img
-            src={`/images/weapon_${rowIdx}.webp`}
+            src={`/items/weapon_${rowIdx}.webp`}
             alt={`weapon level ${rowIdx}`}
             onClick={() => upgradeItem(WEAPON, rowIdx)}
             className="item"
