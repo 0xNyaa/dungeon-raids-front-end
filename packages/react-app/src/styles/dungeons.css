@@ -28,7 +28,7 @@
 .dungeon-details {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-evenly;
   padding: 5px;
   margin: 5px;
