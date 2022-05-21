@@ -1,0 +1,37 @@
+.items-container {
+  flex: 1 1 auto;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid white;
+}
+
+.upgrades-container {
+  width: 100%;
+}
+
+.upgrade-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.upgrade-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+
+.upgrade-row .item {
+  margin: 8px 12px;
+  border: 2px solid white;
+}
+
+.item {
+  width: 60px;
+}

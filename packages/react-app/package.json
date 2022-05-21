@@ -44,5 +44,8 @@
     "ipfs": "yarn build && ipfs-deploy build/",
     "start": "react-scripts start",
     "test": "react-scripts test"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0"
   }
 }

@@ -2,7 +2,7 @@ import { DAppProvider } from "@usedapp/core";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles";
-import Navbar from "./components/navbar";
+import Layout from "./components/layout";
 
 // Change this to your own Infura project id: https://infura.io/register
 const config = {
@@ -15,7 +15,7 @@ const config = {
 ReactDOM.render(
   <React.StrictMode>
     <DAppProvider config={config}>
-      <Navbar />
+      <Layout />
     </DAppProvider>
   </React.StrictMode>,
   document.getElementById("root")
