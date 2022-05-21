@@ -1,14 +1,13 @@
-import { DAppProvider } from "@usedapp/core";
+import { ChainId, DAppProvider } from "@usedapp/core";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles";
 import Layout from "./components/layout";
 
-// Change this to your own Infura project id: https://infura.io/register
 const config = {
-  readOnlyChainId: 80001,
+  readOnlyChainId: ChainId.Mumbai,
   readOnlyUrls: {
-    80001: "https://polygon-mumbai.g.alchemy.com/v2/wH0XJtlYF1nSaMizLBhRgN7HFJddg_9i"
+    [ChainId.Mumbai]: process.env.REACT_APP_ALCHEMY_MUMBAI_RPC
   }
 };
 

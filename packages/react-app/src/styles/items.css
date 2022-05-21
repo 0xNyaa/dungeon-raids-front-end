@@ -1,11 +1,12 @@
 .items-container {
-  flex: 1 1 auto;
+  flex: 1;
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-right: 1px solid white;
+  padding: 20px;
 }
 
 .upgrades-container, .inventory-container {

@@ -3,9 +3,26 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid white;
-  height: 60px;
+  height: 48px;
+  padding: 16px;
 }
 
-.balance {
-  margin: 0;
+.navbar div {
+  margin: 0 5px;
+}
+
+.resource-power, .resource-gold {
+  display: flex;
+  align-items: center;
+}
+
+.resource-icon {
+  margin-right: 8px;
+}
+
+.navbar-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
