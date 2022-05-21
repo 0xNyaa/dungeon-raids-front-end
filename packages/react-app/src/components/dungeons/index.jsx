@@ -1,18 +1,22 @@
-import EasyDungeonBG from './images/easy_dungeon.png';
-import MediumDungeonBG from './images/medium_dungeon.png';
-import HardDungeonBG from './images/hard_dungeon.png';
+import EasyDungeonBG from './images/easy_dungeon_full.webp';
+import MediumDungeonBG from './images/medium_dungeon_full.jpeg';
+import HardDungeonBG from './images/hard_dungeon_full.jpeg';
+
+const EASY = 'Easy';
+const MEDIUM = 'Medium';
+const HARD = 'Hard';
 
 const difficultyToBgImage = {
-  EASY: EasyDungeonBG,
-  MEDIUM: MediumDungeonBG,
-  HARD: HardDungeonBG,
+  [EASY]: EasyDungeonBG,
+  [MEDIUM]: MediumDungeonBG,
+  [HARD]: HardDungeonBG,
 };
 
 export default function Dungeons() {
   const dungeonData = [
     {
       name: 'Aztec',
-      difficulty: 'EASY',
+      difficulty: EASY,
       partySize: '1',
       quorum: '1,500 / 100',
       deadline: '1m 45s',
@@ -20,7 +24,7 @@ export default function Dungeons() {
     },
     {
       name: 'Blight',
-      difficulty: 'MEDIUM',
+      difficulty: MEDIUM,
       partySize: '3',
       quorum: '5000 / 1,000',
       deadline: '10s ago',
@@ -28,7 +32,7 @@ export default function Dungeons() {
     },
     {
       name: 'Citadel',
-      difficulty: 'HARD',
+      difficulty: HARD,
       partySize: '5',
       quorum: '0 / 2,000',
       deadline: 'Not Started',
