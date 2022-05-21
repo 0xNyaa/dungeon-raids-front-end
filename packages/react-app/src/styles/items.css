@@ -4,9 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid white;
+  border-right: 1px solid gray;
   padding: 20px;
-  height: 80vh; /* TODO: make this responsive */
 }
 
 .upgrades-container, .inventory-container {
@@ -25,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40px;
+  width: 2rem;
 }
 
 .inventory-row .item {
@@ -43,5 +42,5 @@
 }
 
 .item {
-  width: 60px;
+  width: 5rem;
 }
